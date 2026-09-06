@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ליאל נוריאל | פורטפוליו</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">L.N</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">בית</a></li>
+          <li><a href="#about">עליי</a></li>
+          <li><a href="#projects">פרויקטים</a></li>
+          <li><a href="#skills">כישורים</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="החלף מצב תצוגה">🌙</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="תפריט">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="hero-greeting">היי, אני</p>
+      <h1 class="hero-name">ליאל נוריאל</h1>
+      <p class="hero-title">מפתח/ת תוכנה</p>
+      <p class="hero-desc">בונה/ת חוויות דיגיטליות נקיות, מהירות ונגישות.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">הצג פרויקטים</a>
+        <a href="#contact" class="btn btn-outline">צור קשר</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">עליי</h2>
+      <div class="about-content">
+        <p>
+          אני מפתח/ת תוכנה עם תשוקה ליצירת פתרונות פשוטים ואלגנטיים לבעיות מורכבות.
+          אוהב/ת ללמוד טכנולוגיות חדשות ולהפוך רעיונות למוצרים אמיתיים.
+          העמוד הזה עצמו הוא דוגמה קטנה לפרויקט שנבנה מאפס - HTML, CSS ו-JavaScript טהורים, ללא ספריות חיצוניות.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">פרויקטים</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card-icon">🚀</div>
+          <h3>פרויקט לדוגמה 1</h3>
+          <p>תיאור קצר של הפרויקט - מה הוא עושה ואילו טכנולוגיות שימשו לבנייתו.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="card">
+          <div class="card-icon">💡</div>
+          <h3>פרויקט לדוגמה 2</h3>
+          <p>תיאור קצר של הפרויקט - מה הוא עושה ואילו טכנולוגיות שימשו לבנייתו.</p>
+          <div class="card-tags"><span>Python</span><span>API</span></div>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>פרויקט לדוגמה 3</h3>
+          <p>תיאור קצר של הפרויקט - מה הוא עושה ואילו טכנולוגיות שימשו לבנייתו.</p>
+          <div class="card-tags"><span>Node.js</span><span>Express</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">כישורים</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML5</div>
+        <div class="skill-item">CSS3</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">Node.js</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">צור קשר</h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">שם</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">אימייל</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">הודעה</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">שלח הודעה</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ליאל נוריאל. כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
